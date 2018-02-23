@@ -1,0 +1,458 @@
+﻿<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/cbl.css" />
+		<script type="text/javascript" src="../JQuery/jquery.min.js"></script>
+		<script src="../bootstrap/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+		<title>主页-人机交互大作战</title>
+		<audio autoplay="autoplay" src="../李中光/music/小相思.mp3"></audio>
+		<style>
+			div,
+			ul,
+			li,
+			body,
+			p {
+				margin: 0;
+				padding: 0;
+				font-size: 14px;
+				font-family: "Microsoft Yahei", "微软雅黑", sans-serif;
+			}
+			
+			.clearfix::after {
+				clear: both;
+				display: block;
+				height: 0;
+				content: '';
+			}
+			
+			ul,
+			li {
+				list-style: none;
+			}
+			
+			#container {
+				width: 816px;
+				margin: 0 auto;
+			}
+			
+			#container li {
+				position: relative;
+				width: 230px;
+				border: 1px solid #ccc;
+				height: 150px;
+				line-height: 150px;
+				text-align: center;
+				margin: 20px;
+				float: left;
+				cursor: pointer;
+				overflow: hidden;
+			}
+			
+			#container li p {
+				height: 150px;
+				width: 100%;
+				position: absolute;
+				left: 0;
+				top: -150px;
+				color: #ffffff;
+				z-index: 2;
+			}
+			
+			#container li .img {
+				width: 230px;
+				height: 150px;
+				display: block;
+				-moz-transition: .5s ease-in;
+				-webkit-transition: .5s ease-in;
+				-o-transition: .5s ease-in;
+				-ms-transition: .5s ease-in;
+				transition: .5s ease-in;
+			}
+			
+			#container li:hover .img {
+				transform: scale(1.1, 1.1);
+				-moz-transform: scale(1.1, 1.1);
+				-webkit-transform: scale(1.1, 1.1);
+				-o-transform: scale(1.1, 1.1)
+			}
+			
+			#container li p i {
+				width: 100%;
+				height: 100%;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				z-index: -1;
+				background: #000000;
+				opacity: 0.7;
+				-moz-opacity: 0.7;
+				filter: alpha(opacity=70);
+				font-size: 16px;
+			}
+			
+			#container li p span {
+				display: block;
+				width: 94%;
+				margin: 0 auto;
+				line-height: 24px;
+				font-size: 12px;
+				padding-top: 60px;
+			}
+			
+			#container li p a {
+				display: block;
+				position: absolute;
+				width: 32px;
+				height: 32px;
+				left: 50%;
+				margin-left: -16px;
+				top: 20px;
+				background: url("../images/link.png") no-repeat 0 0;
+			}
+			
+			.explain {
+				display: block;
+				margin: 0 auto;
+			}
+			
+			.bottom {
+				clear: both;
+				margin: 50px auto;
+				text-align: center;
+				padding: 10px 0;
+				line-height: 25px;
+				color: #666;
+				border-top: #ddd 1px solid;
+			}
+			
+			.bottom a {
+				margin: 0 7px;
+				color: #666;
+			}
+			
+			.bottom a:hover {
+				color: #000;
+				text-decoration: underline;
+			}
+		</style>
+		<script type="text/javascript" src=></script>
+	</head>
+
+	<body id="ye2">
+		<div class="container">
+			<div class="row clearfix">
+				<div class="col-md-12 column">
+					<ul class="nav nav-pills">
+						<li class="active">
+							<a href="主页.html">首页</a>
+						</li>
+						<li>
+							<a href="other/jianjie.html">简介</a>
+						</li>
+						<li>
+							<img src="../images/bb1.gif"disabled">
+						 
+								
+						</li>
+						<li class="navbar-right">
+							<a href="欢迎页.html">退出</a></li>
+						</li>
+						<li class="navbar-right">
+							
+							<a href="#"><input type="text"><button type="button" style="background-color:#E4B9C0" >搜索</button></a>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class='card-holder'>
+  <div class='card-wrapper'>
+    <a href='#'>
+      <div class='card bg-01'>
+        <span class='card-content'>人</span>
+      </div>
+    </a>
+  </div>
+  <div class='card-wrapper'>
+    <a href='#'>
+      <div class='card bg-02'>
+        <span class='card-content'>机</span>
+      </div>
+    </a>
+  </div>
+  <div class='card-wrapper'>
+    <a href='#'>
+      <div class='card bg-03'>
+        <span class='card-content'>交</span>
+      </div>
+    </a>
+  </div>
+  <div class='card-wrapper'>
+    <a href='#'>
+      <div class='card bg-04'>
+        <span class='card-content'>互</span>
+      </div>
+    </a>
+  </div>
+  <div class='card-wrapper'>
+    <a href='#'>
+      <div class='card bg-05'>
+        <span class='card-content'>大</span>
+      </div>
+    </a>
+  </div>
+  <div class='card-wrapper'>
+    <a href='#'>
+      <div class='card bg-06'>
+        <span class='card-content'>作</span>
+      </div>
+    </a>
+  </div>
+   <div class='card-wrapper'>
+    <a href='#'>
+      <div class='card bg-07'>
+        <span class='card-content'>战</span>
+      </div>
+    </a>
+  </div>
+</div>
+		<ul id="container" class="clearfix">
+		<li>
+				<img class="img" src="../images/bg-sss.png">
+				<p>
+					<span>一半在土里安详，一半在风里飞扬，一半洒落阴凉，一半沐浴阳光。</span>
+				
+					<a href="../孙姗姗/HTML/sss.html"title="孙姗姗"></a>
+					<i></i>
+				</p>
+			</li>
+			<li>
+				<img class="img" src="../images//bg-lzg.png">
+				<p>
+					<span>如果有来生，我要做一棵树，站成永恒，没有悲欢的姿势。</span>
+					<a  href="../李中光/lzg.html"title="李中光"></a>
+					<i></i>
+				</p>
+			</li>
+			
+			<li>
+				<img class="img" src="../images/bg-lcx.png">
+				<p>
+					<span>非常沉默非常骄傲，从不依靠从不寻找。</span>
+					<a  href="../鲁彩霞/lcx.html"title="鲁彩霞"></a>
+					<i></i>
+				</p>
+			</li>
+			<li>
+				<img class="img" src="../images/bg-lxy.png">
+				<p>
+					<span>如果有来生，有没有人爱，我也要努力做一个可爱的人。</span>
+					<a href="../林旭阳/lxy.html"title="林旭阳"></a>
+					<i></i>
+				</p>
+			</li>
+			<li>
+				<img class="img" src="../images/bg-lxs.png">
+				<p>
+					<span>不埋怨谁，不嘲笑谁，也不羡慕谁，阳光下灿烂，风雨中奔跑，做自己的梦，走自己的路。</span>
+					<a href="../林小怂/lxs.html"></a>
+					<i></i>
+				</p>
+			</li>
+			<li>
+				<img class="img" src="../images/bg-wl.png">
+				<p>
+					<span>天王盖地虎，王乐二百五</span>
+					<a  href="../王乐/wl.html"></a>
+					<i></i>
+				</p>
+			</li>
+		</ul>
+
+		<script>
+			$("#container li").each(function() {
+				$(this).on('mouseenter', function(e) {
+					var e = e || window.event;
+					var angle = direct(e, this)
+					mouseEvent(angle, this, 'in')
+				})
+				$(this).on('mouseleave', function(e) {
+					var e = e || window.event;
+					var angle = direct(e, this)
+					mouseEvent(angle, this, 'off')
+				})
+			})
+
+			function direct(e, o) {
+				var w = o.offsetWidth;
+				var h = o.offsetHeight;
+				var top = o.offsetTop; //包含滚动条滚动的部分
+				var left = o.offsetLeft;
+				var scrollTOP = document.body.scrollTop || document.documentElement.scrollTop;
+				var scrollLeft = document.body.scrollLeft || document.documentElement.scrollLeft;
+				var offTop = top - scrollTOP;
+				var offLeft = left - scrollLeft;
+				//console.log(offTop+";"+offLeft)
+				// e.pageX|| e.clientX;
+				//pageX 是从页面0 0 点开始  clientX是当前可视区域0 0开始  即当有滚动条时clientX  小于  pageX
+				//ie678不识别pageX
+				//PageY=clientY+scrollTop-clientTop;(只讨论Y轴,X轴同理,下同) 页面上的位置=可视区域位置+页面滚动条切去高度-自身border高度
+				var ex = (e.pageX - scrollLeft) || e.clientX;
+				var ey = (e.pageY - scrollTOP) || e.clientY;
+				var x = (ex - offLeft - w / 2) * (w > h ? (h / w) : 1);
+				var y = (ey - offTop - h / 2) * (h > w ? (w / h) : 1);
+
+				var angle = (Math.round((Math.atan2(y, x) * (180 / Math.PI) + 180) / 90) + 3) % 4 //atan2返回的是弧度 atan2(y,x)
+				var directName = ["上", "右", "下", "左"];
+				return directName[angle]; //返回方向  0 1 2 3对应 上 右 下 左
+			}
+
+			function mouseEvent(angle, o, d) { //方向  元素  鼠标进入/离开
+				var w = o.offsetWidth;
+				var h = o.offsetHeight;
+
+				if(d == 'in') {
+					switch(angle) {
+						case '上':
+							$(o).find("p").css({
+								left: 0,
+								top: -h + "px"
+							}).stop(true).animate({
+								left: 0,
+								top: 0
+							}, 300)
+							setTimeout(function() {
+								$(o).find("p a").css({
+									left: '50%',
+									top: -h + "px"
+								}).stop(true).animate({
+									left: '50%',
+									top: '20px'
+								}, 300)
+							}, 200)
+							break;
+						case '右':
+							$(o).find("p").css({
+								left: w + "px",
+								top: 0
+							}).stop(true).animate({
+								left: 0,
+								top: 0
+							}, 300)
+							setTimeout(function() {
+								$(o).find("p a").css({
+									left: w + "px",
+									top: '20px'
+								}).stop(true).animate({
+									left: '50%',
+									top: '20px'
+								}, 300)
+							}, 200)
+							break;
+						case '下':
+							$(o).find("p").css({
+								left: 0,
+								top: h + "px"
+							}).stop(true).animate({
+								left: 0,
+								top: 0
+							}, 300)
+							setTimeout(function() {
+								$(o).find("p a").css({
+									left: '50%',
+									top: h + "px"
+								}).stop(true).animate({
+									left: '50%',
+									top: '20px'
+								}, 300)
+							}, 200)
+							break;
+						case '左':
+							$(o).find("p").css({
+								left: -w + "px",
+								top: 0
+							}).stop(true).animate({
+								left: 0,
+								top: 0
+							}, 300)
+							setTimeout(function() {
+								$(o).find("p a").css({
+									left: -w + "px",
+									top: '20px'
+								}).stop(true).animate({
+									left: '50%',
+									top: '20px'
+								}, 300)
+							}, 200)
+							break;
+					}
+				} else if(d == 'off') {
+					switch(angle) {
+						case '上':
+							$(o).find("p a").stop(true).animate({
+								left: '50%',
+								top: -h + "px"
+							}, 300)
+							setTimeout(function() {
+								$(o).find("p").stop(true).animate({
+									left: 0,
+									top: -h + "px"
+								}, 300)
+							}, 200)
+							break;
+						case '右':
+							$(o).find("p a").stop(true).animate({
+								left: w + "px",
+								top: '20px'
+							}, 300)
+							setTimeout(function() {
+								$(o).find("p").stop(true).animate({
+									left: w + "px",
+									top: 0
+								}, 300)
+							}, 200)
+							break;
+						case '下':
+							$(o).find("p a").stop(true).animate({
+								left: '50%',
+								top: h + "px"
+							}, 300)
+							setTimeout(function() {
+								$(o).find("p").stop(true).animate({
+									left: 0,
+									top: h + "px"
+								}, 300)
+							}, 200)
+							break;
+						case '左':
+							$(o).find("p a").stop(true).animate({
+								left: -w + "px",
+								top: '20px'
+							}, 300)
+							setTimeout(function() {
+								$(o).find("p").stop(true).animate({
+									left: -w + "px",
+									top: 0
+								}, 300)
+							}, 200)
+							break;
+					}
+				}
+			}
+		</script>
+		<div class="bottom">
+			<a href="#" rel="nofollow" style="color: #5CB85C;">关于我们</a>|
+			<a href="#" rel="nofollow"style="color:#8A2BE2">广告服务</a>|
+			<a href="#" rel="nofollow"style="color:#C9302C">联系我们</a>|
+			<a href="#" rel="nofollow"style="color:#2E6DA4;">法律声明</a>|
+			<a href="#" rel="nofollow"style="color:pink">网站地图</a>|
+			<a href="#" rel="nofollow"style="color:yellow">版权声明</a>|
+			<a href="#" rel="nofollow"style="color:white">帮助中心</a><br />　© 1996-2017　银河系ICP备6166666号<br /> 人机交互大作战 版权所有
+		</div>
+	</body>
+
+</html>

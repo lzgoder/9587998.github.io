@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+			<link rel="stylesheet" href="../css/cbl.css" />
+<link rel="stylesheet" href="src/css/smusic.css"/>
+<title>音乐-人机交互大作战</title>
+<script type="text/javascript" src="../JQuery/jquery.min.js"></script>
+		<script src="../bootstrap/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="../bootstrap/css/bootstrap.css"/>
+
+</head>
+<body background="../images/hz1.png">
+
+<div class="grid-music-container f-usn">
+    <div class="m-music-play-wrap">
+        <div class="u-cover"></div>
+        <div class="m-now-info">
+            <h1 class="u-music-title"><strong>标题</strong><small>歌手</small></h1>
+            <div class="m-now-controls">
+                <div class="u-control u-process">
+                    <span class="buffer-process"></span>
+                    <span class="current-process"></span>
+                </div>
+                <div class="u-control u-time">00:00/00:00</div>
+                <div class="u-control u-volume">
+                    <div class="volume-process" data-volume="0.50">
+                        <span class="volume-current"></span>
+                        <span class="volume-bar"></span>
+                        <span class="volume-event"></span>
+                    </div>
+                    <a class="volume-control"></a>
+                </div>
+            </div>
+            <div class="m-play-controls">
+                <a class="u-play-btn prev" title="上一曲"></a>
+                <a class="u-play-btn ctrl-play play" title="暂停"></a>
+                <a class="u-play-btn next" title="下一曲"></a>
+                <a class="u-play-btn mode mode-list current" title="列表循环"></a>
+                <a class="u-play-btn mode mode-random" title="随机播放"></a>
+                <a class="u-play-btn mode mode-single" title="单曲循环"></a>
+            </div>
+        </div>
+    </div>
+    <div class="f-cb">&nbsp;</div>
+    <div class="m-music-list-wrap"></div>
+</div>
+<script src="src/js/smusic.min.js"></script>
+<script>
+var musicList = [
+	{
+		title : '少年你在哪里',
+		singer : '花粥',
+		cover  : 'images/hz2.png',
+		src    : 'music/少年你在哪里.mp3'
+	},
+	{
+		title : '只不过是',
+		singer : '花粥',
+		cover  : 'images/hz.png',
+		src    : 'music/只不过是.mp3'
+	},	
+	{
+		title : '一腔诗意喂了狗',
+		singer : '花粥',
+		cover  : 'images/hz.png',
+		src    : 'music/一腔诗意喂了狗.mp3'
+	},
+	{
+		title : '小相思',
+		singer : '花粥',
+		cover  : 'images/hz.png',
+		src    : 'music/小相思.mp3'
+	}
+];
+new SMusic({
+	musicList:musicList
+});
+</script>
+<div class="container">
+			<div class="row clearfix">
+				<div class="col-md-12 column">
+					<ul class="nav nav-pills">
+						<li class="active">
+							<a href="主页.html">首页</a>
+						</li>
+						<li>
+							<a href="other/jianjie.html">简介</a>
+						</li>
+						<li>
+							<img src="../images/bb1.gif"disabled">
+						</li>
+						<li class="navbar-right">
+							<a href="欢迎页.html">退出</a></li>
+						</li>
+						<li class="navbar-right">
+							
+							<a href="#"><input type="text"><button type="button" style="background-color:#E4B9C0" >搜索</button></a>
+					</ul>
+				</div>
+			</div>
+		</div>
+</div>
+<div class='card-holder'>
+  <div class='card-wrapper'>
+    <a href='#'>
+      <div class='card bg-01'>
+        <span class='card-content'>人</span>
+      </div>
+    </a>
+  </div>
+  <div class='card-wrapper'>
+    <a href='#'>
+      <div class='card bg-02'>
+        <span class='card-content'>机</span>
+      </div>
+    </a>
+  </div>
+  <div class='card-wrapper'>
+    <a href='#'>
+      <div class='card bg-03'>
+        <span class='card-content'>交</span>
+      </div>
+    </a>
+  </div>
+  <div class='card-wrapper'>
+    <a href='#'>
+      <div class='card bg-04'>
+        <span class='card-content'>互</span>
+      </div>
+    </a>
+  </div>
+  <div class='card-wrapper'>
+    <a href='#'>
+      <div class='card bg-05'>
+        <span class='card-content'>大</span>
+      </div>
+    </a>
+  </div>
+  <div class='card-wrapper'>
+    <a href='#'>
+      <div class='card bg-06'>
+        <span class='card-content'>作</span>
+      </div>
+    </a>
+  </div>
+   <div class='card-wrapper'>
+    <a href='#'>
+      <div class='card bg-07'>
+        <span class='card-content'>战</span>
+      </div>
+    </a>
+  </div>
+</div>
+</body>
+<div class="bottom" style="width:100%; position:fixed; bottom:0;"align="center">
+			<a href="#" rel="nofollow" style="color: #5CB85C;">关于我们</a>|
+			<a href="#" rel="nofollow"style="color:#8A2BE2">广告服务</a>|
+			<a href="#" rel="nofollow"style="color:#C9302C">联系我们</a>|
+			<a href="#" rel="nofollow"style="color:#2E6DA4;">法律声明</a>|
+			<a href="#" rel="nofollow"style="color:pink">网站地图</a>|
+			<a href="#" rel="nofollow"style="color:yellow">版权声明</a>|
+			<a href="#" rel="nofollow"style="color:white">帮助中心</a><br />　© 1996-2017　银河系ICP备6166666号<br /> 人机交互大作战 版权所有
+		</div>
+</html>
